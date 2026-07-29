@@ -21,7 +21,7 @@ conda activate <환경이름>
 
  **필요 패키지**
 ```
-pip install matplotlib=3.7.5 pygame=2.6.1 ...
+pip install matplotlib==3.7.5 pygame==2.6.1 ...
 ```
 **python=3.8.20, tensorflow=2.13, numpy=1.24.3, matplotlib=3.7.5, gym=0.26.2, pygame 2.6.1** 설치
 
