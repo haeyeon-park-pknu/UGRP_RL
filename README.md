@@ -64,11 +64,6 @@ $$Q(s,a) \leftarrow \big[r +\max_{a'} Q(s',a')\big]$$
 
 정책 화살표가 절벽 바로 윗줄을 따라 오른쪽으로 이어져야 합니다.
 
-```
-python q_learning.py --plot     # 학습 곡선 저장
-python q_learning.py --watch    # 정책을 창으로 재생 (pygame 필요)
-```
-
 ## 실험
 
 - `EPS_DECAY` 를 `0.999` / `0.9` 로 바꾸면?
