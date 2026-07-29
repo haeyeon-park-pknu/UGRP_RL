@@ -56,6 +56,11 @@ S  C  C  C  C  C  C  C  C  C  C  T
 
 `S` 시작(36) · `T` 목표(47) · `C` 절벽
 
+![CliffWalking 환경](images/cliffwalking.png)
+
+`play_human.py` 나 `--watch` 로 창을 띄우면 위처럼 보입니다. 왼쪽 아래 요정이
+에이전트, 오른쪽 아래 파이가 목표, 가운데 어두운 띠가 절벽입니다.
+
 | 항목 | 내용 |
 |---|---|
 | 상태 | `0` ~ `47` (`state = row * 12 + col`) |
@@ -128,5 +133,6 @@ PAUSE = 1.2             # 에피소드 사이 정지 시간(초)
 - Q러닝 대신 SARSA 알고리즘을 구현해보세요.
 
 ## 참고
+cliff walking 참조: https://gymnasium.farama.org/environments/toy_text/cliff_walking/
 
 `Gym has been unmaintained since 2022...` 경고는 무시해도 됩니다.
