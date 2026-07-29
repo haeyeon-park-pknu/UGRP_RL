@@ -54,7 +54,7 @@ $$Q(s,a) \leftarrow Q(s,a) + \alpha\big[r + \gamma \max_{a'} Q(s',a') - Q(s,a)\b
 
 혹은
 
-$$Q(s,a) \leftarrow Q(s,a) + \big[r +\max_{a'} Q(s',a')\big]$$
+$$Q(s,a) \leftarrow \big[r +\max_{a'} Q(s',a')\big]$$
 
 ## 성공 기준
 
