@@ -23,8 +23,7 @@ conda activate <환경이름>
 ```
 pip install matplotlib pygame
 ```
-**python 3.8.5 권장**
-
+**python 3.8.5, Tensorflow 2.4.1, numpy 1.19.5, matplotlib 3.6.3, gym 0.25.2, pygame 2.6.1**
 
 **Python 3.8 과 3.11 에서 동작을 확인했습니다.** 더 최신 버전에서는 `gym` 설치나 실행이
 실패할 수 있습니다(2022년 이후 유지보수 중단). 
