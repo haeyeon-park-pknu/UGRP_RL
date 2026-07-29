@@ -51,9 +51,10 @@ next_state, reward, terminated, truncated, info = env.step(a)
 **2. `update_q(Q, s, a, r, s2, terminated)`**
 
 $$Q(s,a) \leftarrow Q(s,a) + \alpha\big[r + \gamma \max_{a'} Q(s',a') - Q(s,a)\big]$$
+
 혹은
+
 $$Q(s,a) \leftarrow Q(s,a) + \big[r +\max_{a'} Q(s',a')\big]$$
-`terminated=True` 면 목표값이 `r` 입니다.
 
 ## 성공 기준
 
@@ -74,6 +75,3 @@ python q_learning.py --watch    # 정책을 창으로 재생 (pygame 필요)
 - `GAMMA` 를 `0.9`, `0.5` 로 낮추면 절벽에 얼마나 가까이 붙는가?
 - Q러닝 대신 SARSA(`max` 대신 실제 다음 행동의 Q)로 바꾸면 경로가 어떻게 달라지는가?
 
-## 참고
-
-`Gym has been unmaintained since 2022...` 경고는 무시해도 됩니다.
