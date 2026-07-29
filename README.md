@@ -51,7 +51,8 @@ next_state, reward, terminated, truncated, info = env.step(a)
 **2. `update_q(Q, s, a, r, s2, terminated)`**
 
 $$Q(s,a) \leftarrow Q(s,a) + \alpha\big[r + \gamma \max_{a'} Q(s',a') - Q(s,a)\big]$$
-
+혹은
+$$Q(s,a) \leftarrow Q(s,a) + \big[r +\max_{a'} Q(s',a')\big]$$
 `terminated=True` 면 목표값이 `r` 입니다.
 
 ## 성공 기준
