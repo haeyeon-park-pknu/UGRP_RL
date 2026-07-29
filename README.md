@@ -7,40 +7,6 @@ OpenAI Gym 내장 환경 `CliffWalking-v0` 에서 Q러닝 에이전트를 구현
 | `play.py` | 키보드로 직접 해보기 |
 | `q_learning.py` | 과제 파일. TODO 두 곳 |
 
-## 설치
-
-```
-pip install "numpy<2" gym
-```
-
-**`numpy<2` 의 따옴표를 빼지 마세요.** `gym` 은 2022년 이후 유지보수가 중단되어
-NumPy 2.0 을 지원하지 않습니다. 그냥 `pip install numpy gym` 하면 NumPy 2.x 가 깔리고
-실행 시 아래 오류가 납니다.
-
-```
-AttributeError: module 'numpy' has no attribute 'bool8'
-```
-
-이미 이 상태라면 `pip install "numpy<2"` 로 되돌리면 됩니다.
-
-선택 사항 — 없어도 과제 수행에는 지장 없습니다.
-
-| 패키지 | 필요한 경우 |
-|---|---|
-| `matplotlib` | `--plot` 으로 학습 곡선을 저장할 때 |
-| `pygame` | `--watch` 로 정책을 창에서 재생할 때 |
-
-```
-pip install matplotlib pygame
-```
-
-**Python 3.8 과 3.11 에서 동작을 확인했습니다.** 더 최신 버전에서는 `gym` 설치나 실행이
-실패할 수 있습니다(2022년 이후 유지보수 중단). 그런 경우 파이썬을 3.11 로 맞추거나,
-아래처럼 버전을 직접 지정해 설치하세요.
-
-```
-pip install "numpy<2" "gym==0.26.2"
-```
 
 ## 진행 순서
 
