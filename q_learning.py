@@ -39,9 +39,7 @@ def select_action(Q, s, eps, rng):
 
 # ----------------------------------------------------------------------
 # TODO 2. Q값 갱신
-#   Q(s,a) <- Q(s,a) + \alpha [r + \gamma \max_{a'} Q(s',a') - Q(s,a)]
-#                               or
-#   Q(s,a) <- r + max Q(s',a')
+#   Q(s,a) <- Q(s,a) + α [ r + γ·max Q(s',a') - Q(s,a) ]
 #   terminated=True 면 다음 상태의 가치가 없으므로 목표값은 r 이다.
 # ----------------------------------------------------------------------
 def update_q(Q, s, a, r, s2, terminated):
